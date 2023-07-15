@@ -1,6 +1,6 @@
 import torch
 import matplotlib.pyplot as plt
-from multi_armed_bandit_env import BanditEnv
+from mab_env import BanditEnv
 from rich.progress import track
 
 
