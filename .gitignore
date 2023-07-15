@@ -180,7 +180,7 @@ poetry.toml
 
 # ruff
 .ruff_cache/
-
+.env-pricai/
 # LSP config files
 pyrightconfig.json
 
