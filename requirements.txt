@@ -1,3 +1,6 @@
 matplotlib
 rich
 torch
+pandas
+plotly
+cufflinks
