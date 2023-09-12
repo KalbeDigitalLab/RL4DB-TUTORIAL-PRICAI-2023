@@ -1,7 +1,7 @@
 import numpy as np
 import ray
-from ray.rllib.agents.ppo.ppo import DEFAULT_CONFIG
-from ray.rllib.agents.ppo.ppo import PPOTrainer
+from ray.rllib.algorithms.ppo import DEFAULT_CONFIG
+from ray.rllib.algorithms.ppo import PPOTrainer
 
 from inventory_env import InventoryEnv
 
