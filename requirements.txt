@@ -5,3 +5,6 @@ pandas
 plotly
 cufflinks
 nbformat
+gym
+scipy
+ray
