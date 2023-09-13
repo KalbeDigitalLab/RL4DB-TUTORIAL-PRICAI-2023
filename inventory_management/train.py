@@ -2,8 +2,8 @@ import numpy as np
 
 import ray
 from ray.tune.logger import pretty_print
-from ray.rllib.algorithms.ppo import DEFAULT_CONFIG
-from ray.rllib.algorithms.ppo import PPOTrainer
+from ray.rllib.agents.ppo.ppo import DEFAULT_CONFIG
+from ray.rllib.agents.ppo.ppo import PPOTrainer
 
 from inventory_env import InventoryEnv
 

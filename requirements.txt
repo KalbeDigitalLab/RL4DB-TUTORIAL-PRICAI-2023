@@ -7,4 +7,4 @@ cufflinks
 nbformat
 gym
 scipy
-ray
+ray==1.13.0
