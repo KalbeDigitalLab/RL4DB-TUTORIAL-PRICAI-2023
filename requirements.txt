@@ -1,10 +1,15 @@
 matplotlib
 rich
-torch
+# torch
 pandas
 plotly
 cufflinks
 nbformat
-gym
+gym==0.12.5
 scipy
-ray==1.13.0
+ray==0.8.7
+ray[rllib]==0.8.7
+ray[tune]==0.8.7
+opencv-python
+tensorflow
+gputil

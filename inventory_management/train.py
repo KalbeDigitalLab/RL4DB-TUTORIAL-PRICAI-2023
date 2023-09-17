@@ -10,7 +10,7 @@ from inventory_env import InventoryEnv
 config = DEFAULT_CONFIG.copy()
 config["env"] = InventoryEnv
 config["num_gpus"] = 1  # Set this to 0 if you don't have a GPU.
-config["num_workers"] = 50  # Set this based on the number of CPUs on your machine
+config["num_workers"] = 4  # Set this based on the number of CPUs on your machine
 
 # Combination 1
 # config["clip_param"] = 0.3
