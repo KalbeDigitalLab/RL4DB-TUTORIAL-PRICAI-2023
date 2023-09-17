@@ -1,5 +1,4 @@
 import numpy as np
-
 import ray
 from ray.tune.logger import pretty_print
 from ray.rllib.agents.ppo.ppo import DEFAULT_CONFIG
@@ -7,11 +6,20 @@ from ray.rllib.agents.ppo.ppo import PPOTrainer
 
 from inventory_env import InventoryEnv
 
+# gpus = tf.config.list_physical_devices('GPU')
+# if gpus:
+#     num_gpus = 1
+#     print(f"Number GPU {num_gpus}")
+# else:
+#     num_gpus = 0
+#     print(f"Number GPU {num_gpus}")
+
+
 config = DEFAULT_CONFIG.copy()
 config["env"] = InventoryEnv
 config["num_gpus"] = 1  # Set this to 0 if you don't have a GPU.
 config["num_workers"] = 4  # Set this based on the number of CPUs on your machine
-
+# config["num_iterations"] = 5
 # Combination 1
 # config["clip_param"] = 0.3
 # config["entropy_coeff"] = 0
