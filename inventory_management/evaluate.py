@@ -13,7 +13,7 @@ trainer = PPOTrainer(config=config, env=InventoryEnv)
 
 trainer.restore(
     # Replace this with your checkpoint path.
-    "/home/adhi/ray_results/PPO_InventoryEnv_2020-10-06_04-58-04t8r36o9o/checkpoint_781/checkpoint-781"
+    "ray_results/PPO_InventoryEnv_2023-09-26_14-57-438z9flexj/checkpoint_3300/checkpoint-3300"
 )
 
 if __name__ == "__main__":
