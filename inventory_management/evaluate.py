@@ -21,7 +21,7 @@ if __name__ == "__main__":
     env = InventoryEnv()
     episode_reward_avgs = []
     episode_total_rewards = []
-    for i in range(2000):
+    for i in range(500):
         print(f"Episode: {i+1}")
         state = env.reset()
         done = False
@@ -29,6 +29,7 @@ if __name__ == "__main__":
         while not done:
             action = trainer.compute_action(state)
             state, reward, done, info = env.step(action)
+            print(state)
             ep_rewards.append(reward)
         total_reward = np.sum(ep_rewards)
         reward_per_day = np.mean(ep_rewards)
