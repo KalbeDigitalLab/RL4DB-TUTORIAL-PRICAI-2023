@@ -13,7 +13,7 @@ trainer = PPOTrainer(config=config, env=InventoryEnv)
 
 trainer.restore(
     # Replace this with your checkpoint path.
-    "/home/adhi/ray_results/PPO_InventoryEnv_2020-10-06_04-58-04t8r36o9o/checkpoint_781/checkpoint-781"
+    "ray_results/PPO_InventoryEnv_2023-09-26_14-57-438z9flexj/checkpoint_3300/checkpoint-3300"
 )
 
 if __name__ == "__main__":
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     env = InventoryEnv()
     episode_reward_avgs = []
     episode_total_rewards = []
-    for i in range(2000):
+    for i in range(500):
         print(f"Episode: {i+1}")
         state = env.reset()
         done = False
@@ -29,6 +29,7 @@ if __name__ == "__main__":
         while not done:
             action = trainer.compute_action(state)
             state, reward, done, info = env.step(action)
+            print(state)
             ep_rewards.append(reward)
         total_reward = np.sum(ep_rewards)
         reward_per_day = np.mean(ep_rewards)
