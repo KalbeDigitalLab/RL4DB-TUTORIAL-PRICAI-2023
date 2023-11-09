@@ -13,3 +13,4 @@ ray[tune]==0.8.7
 opencv-python
 tensorflow
 gputil
+ipykernel
