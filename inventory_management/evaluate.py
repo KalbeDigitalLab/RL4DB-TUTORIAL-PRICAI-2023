@@ -29,7 +29,7 @@ if __name__ == "__main__":
         while not done:
             action = trainer.compute_action(state)
             state, reward, done, info = env.step(action)
-            print(state)
+            # print(state)
             ep_rewards.append(reward)
         total_reward = np.sum(ep_rewards)
         reward_per_day = np.mean(ep_rewards)
