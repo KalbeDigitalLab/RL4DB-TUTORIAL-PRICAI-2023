@@ -7,6 +7,7 @@ Welcome to the "Reinforcement Learning for Digital Business" repository! This pr
 ### Step 1: Set up the Environment
 
 1. Create a virtual environment using Conda:
+   **Note:** This environment tested with python version 3.7, so if you need to reproduce this code without problem, please use same python version.
    ```bash
    conda create --name rl4db python=3.7
    ```
