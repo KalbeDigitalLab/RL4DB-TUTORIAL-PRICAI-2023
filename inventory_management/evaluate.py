@@ -28,6 +28,7 @@ if __name__ == "__main__":
         ep_rewards = []
         while not done:
             action = trainer.compute_action(state)
+            # print(f"Action: {action}")
             state, reward, done, info = env.step(action)
             # print(state)
             ep_rewards.append(reward)

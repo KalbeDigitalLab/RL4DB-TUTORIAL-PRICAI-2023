@@ -41,6 +41,14 @@ class InventoryEnv(gym.Env):
 
         # Action is between 0 and 1, representing order quantity from
         # 0 up to the order limit.
+        # This code sets up the action space as a continuous range between 0 and 1. 
+        # Therefore, when you print the action values during evaluation, 
+        # they are likely representing the fraction of the maximum order quantity 
+        # that the agent is choosing to order at each time step.
+
+        # For example:
+        # An action value of 0.2 might mean the agent is choosing to order 20% of the order limit.
+        # An action value of 0.5 might mean the agent is choosing to order 50% of the order limit.
         self.action_space = spaces.Box(
             low=np.array([0]),
             high=np.array([1]),
